@@ -1,0 +1,95 @@
+*{ 
+    padding: 0;
+    margin: 0;
+}
+#grilla{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px 100px 1000px 100px;
+    grid-template-areas: "header"
+                         "nav"
+                         "main"
+                         "footer";
+}
+header{
+    background-color: blue;
+}
+h1{
+    color: azure;
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    padding: 50px;
+    
+}
+nav{
+    background-color: rgb(68, 136, 240);
+}
+ul{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none;
+}
+a{
+    font-size: 20px;
+    color: azure;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+main{
+    background-color: rgb(89, 89, 185);
+}
+footer{
+    background-color: blue;
+}
+p{ 
+    color: azure;
+}
+
+h2{
+    color: azure;
+    font-size: 40px;
+    text-align: center;
+}
+button{
+    background-color: aqua;
+    color: black;
+    font-size: 20px;
+}
+table{
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: aliceblue;
+    color: blue;
+    background-position: center;
+}
+b{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+}
+tr{
+    background-color: aquamarine;
+}
+#parrafo-dos-quienes{
+    background-color: rgb(131, 228, 223);
+    color: rgb(36, 41, 41);
+    text-align: justify;
+
+}
+#inicio-1 {
+    height: 200px;
+    width: 450px;
+    position: relative;
+    top: 50%;
+    left: 30%;
+}
+#inicio-2 {
+    height: 200px;
+    width: 450px;
+    position: relative;
+    top: 50%;
+    left: 30%;
+}
