@@ -10,9 +10,32 @@
                          "nav"
                          "main"
                          "footer";
+    justify-content: center;
+    align-content: center;
+}
+#section-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#section-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+#text-img1{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 200px;
+    height: 250px;
+    margin-top: 30px;
 }
 header{
     background-color: blue;
+    grid-area: header;
 }
 h1{
     color: azure;
@@ -24,6 +47,7 @@ h1{
 }
 nav{
     background-color: rgb(68, 136, 240);
+    grid-area: nav;
 }
 ul{
     display: flex;
@@ -33,6 +57,24 @@ ul{
     align-items: center;
     list-style-type: none;
 }
+#lista-inicio{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type:circle;
+
+}
+#lista-quienes{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type:circle;
+
+}
 a{
     font-size: 20px;
     color: azure;
@@ -41,12 +83,17 @@ a{
 }
 main{
     background-color: rgb(89, 89, 185);
+    grid-area: main;
 }
 footer{
     background-color: blue;
+    grid-area: footer;
 }
 p{ 
     color: azure;
+    line-height: 1.5em;
+    text-align: justify;
+    white-space: pre-line;
 }
 
 h2{
@@ -62,10 +109,34 @@ button{
 table{
     text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    background-color: aliceblue;
-    color: blue;
+    background-color: rgb(73, 124, 168);
+    color: rgb(6, 6, 8);
     background-position: center;
+    height: 200px;
+    width: 800px;   
 }
+#gri-serv{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:250px;
+    grid-template-areas: "t1"
+                         "t2";
+    justify-items: center;
+    align-items: center; 
+}
+.tema-serv{
+    grid-area: t1;
+    background-color: rgb(153, 121, 79);
+}
+.tabla-1{
+    grid-area: t2;
+    width: 800px;
+}
+.tabla-serv{
+    width: 850px;
+    height: 450px;
+}
+
 b{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 25px;
@@ -73,23 +144,42 @@ b{
 tr{
     background-color: aquamarine;
 }
+#parraf-quienes{
+padding: 25px;
+display: flex;
+height: 100%;
+justify-content: center;
+align-items:stretch;
+}
+
 #parrafo-dos-quienes{
     background-color: rgb(131, 228, 223);
     color: rgb(36, 41, 41);
-    text-align: justify;
-
+    text-align: right;
 }
 #inicio-1 {
     height: 200px;
-    width: 450px;
+    width: 100%;
     position: relative;
     top: 50%;
-    left: 30%;
+    left: 10%;
 }
 #inicio-2 {
     height: 200px;
-    width: 450px;
+    width: 100%;
     position: relative;
     top: 50%;
-    left: 30%;
+    right: 20%;
+}
+/*para telefonos*/
+@media only screen and (max-width:600px){
+    ul{
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        list-style-type: none;
+    }
+
 }
