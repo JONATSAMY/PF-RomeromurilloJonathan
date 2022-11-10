@@ -1,0 +1,235 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+#grilla {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 150px 100px 1000px 100px;
+  grid-template-areas: "header" "nav" "main" "footer";
+  justify-content: center;
+  align-content: center; }
+
+#section-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+#section-2 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+#text-img1 {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+  height: 250px;
+  margin-top: 30px;
+  font-size: 20px; }
+
+header {
+  background-color: #899B9F;
+  grid-area: header; }
+
+h1 {
+  color: #F2F2F2;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 40px;
+  padding: 50px; }
+
+nav {
+  background-color: #374342;
+  grid-area: nav; }
+
+ul {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: none; }
+
+#lista-inicio {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: circle;
+  color: #F2F2F2;
+  font-size: 20px; }
+
+#lista-quienes {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  list-style-type: circle; }
+
+a {
+  font-size: 20px;
+  color: #F2F2F2;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  text-decoration: none; }
+
+main {
+  background-color: #899B9F;
+  grid-area: main; }
+
+footer {
+  background-color: #0D0D0D;
+  grid-area: footer; }
+
+p {
+  color: #F2F2F2;
+  line-height: 1.5em;
+  text-align: justify;
+  white-space: pre-line; }
+
+h2 {
+  color: #F2F2F2;
+  font-size: 40px;
+  text-align: center; }
+
+button {
+  background-color: #899B9F;
+  color: #F2F2F2;
+  font-size: 20px; }
+
+table {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #497ca8;
+  color: #F2F2F2;
+  background-position: center;
+  height: 200px;
+  width: 800px; }
+
+#tabla-quienes {
+  background-color: #4488f0; }
+
+#gri-serv {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 250px;
+  grid-template-areas: "t1" "t2";
+  justify-items: center;
+  align-items: center; }
+
+.tema-serv {
+  grid-area: t1;
+  background-color: #899B9F; }
+
+.tabla-1 {
+  grid-area: t2;
+  width: 800px; }
+
+.tabla-serv {
+  width: 100%;
+  height: 450px; }
+
+b {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px; }
+
+#parrafo-dos-quienes {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background-color: #899B9F;
+  color: #F2F2F2;
+  text-align: justify;
+  align-items: center;
+  font-size: 18px; }
+
+#inicio-1 {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  left: 10%; }
+
+#inicio-2 {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  top: 50%;
+  right: 20%; }
+
+#blog-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center; }
+
+.caja-blog {
+  height: 25%;
+  width: 30%; }
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  height: 400px;
+  border: 1px solid #141414;
+  border-radius: 1em;
+  background-color: #899B9F; }
+
+label {
+  display: inline-block;
+  width: 90px;
+  text-align: right; }
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center; }
+
+/*para telefonos*/
+@media only screen and (max-width: 700px) {
+  #grilla {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 180px 150px 1000px 120px;
+    grid-template-areas: "header" "nav" "main" "footer";
+    justify-content: center;
+    align-content: center; }
+  header {
+    height: 100%; }
+  ul {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    list-style-type: none; }
+  #section-1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  #section-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .tabla-1 {
+    grid-area: t2;
+    width: 100%; }
+  .tabla-serv {
+    width: 100%;
+    height: 450px; }
+  #blog-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; }
+  .caja-blog {
+    height: 15%;
+    width: 90%; } }
