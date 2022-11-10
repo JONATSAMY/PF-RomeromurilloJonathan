@@ -1,0 +1,25 @@
+{
+  "name": "preentrega2romeromurillojonathan",
+  "version": "1.0.0",
+  "description": "entrega de proyecto coderhouse",
+  "main": "index.js",
+  "devDependencies": {
+    "node-sass": "^8.0.0",
+    "nodemon": "^2.0.20"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss scss/style.scss css/style_sass.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JONATSAMY/PreEntrega2RomeromurilloJonathan.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JONATSAMY/PreEntrega2RomeromurilloJonathan/issues"
+  },
+  "homepage": "https://github.com/JONATSAMY/PreEntrega2RomeromurilloJonathan#readme"
+}
