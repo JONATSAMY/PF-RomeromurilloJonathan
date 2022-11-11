@@ -7,9 +7,8 @@
 #grilla{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 150px 100px 1000px 100px;
+    grid-template-rows: 150px 1000px 100px;
     grid-template-areas: "header"
-                         "nav"
                          "main"
                          "footer";
     justify-content: center;
@@ -36,21 +35,33 @@
     margin-top: 30px;
     font-size: 20px;
 }
+body{
+    font-family: $tipografia;
+    margin: 0;
+}
 header{
     background-color: #899B9F;
     grid-area: header;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.imglogo{
+    height: 50px;
+    margin-right: 10px;
 }
 h1{
     color: #F2F2F2;
-    text-align: center;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-size: 40px;
-    padding: 50px;
-    
+    text-align: center; 
 }
 nav{
     background-color: #374342;
-    grid-area: nav;
 }
 ul{
     display: flex;
@@ -59,6 +70,11 @@ ul{
     justify-content: space-evenly;
     align-items: center;
     list-style-type: none;
+}
+a{
+    font-size: 20px;
+    color: #F2F2F2;
+    text-decoration: none;
 }
 #lista-inicio{
     display: flex;
@@ -79,12 +95,7 @@ ul{
     list-style-type:circle;
 
 }
-a{
-    font-size: 20px;
-    color: #F2F2F2;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    text-decoration: none;
-}
+
 main{
     background-color: #899B9F;
     grid-area: main;
