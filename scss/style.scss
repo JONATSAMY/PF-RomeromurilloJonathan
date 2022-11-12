@@ -7,7 +7,7 @@
 #grilla{
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 150px 1000px 100px;
+    grid-template-rows: 100px 1000px 300px;
     grid-template-areas: "header"
                          "main"
                          "footer";
@@ -60,9 +60,7 @@ h1{
     color: #F2F2F2;
     text-align: center; 
 }
-nav{
-    background-color: #374342;
-}
+
 ul{
     display: flex;
     flex-direction: row;
@@ -75,6 +73,11 @@ a{
     font-size: 20px;
     color: #F2F2F2;
     text-decoration: none;
+    padding-right: 10px;
+}
+a:hover, .social-icon:hover, .menu-item:hover{
+    color:aqua;
+    opacity: 1;
 }
 #lista-inicio{
     display: flex;
@@ -101,8 +104,56 @@ main{
     grid-area: main;
 }
 footer{
+    width: 100%;
     background-color: #0D0D0D;
-    grid-area: footer;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.logo-footer{
+    height: 80px;
+    margin-bottom: 15px;
+}
+.social-icons-container, .footer-menu-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 15px;
+}
+.social-icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    border: 1px solid $color_caja;
+    background-image: url(../img/facebook.png);
+    background-position: center;
+    background-size: 40%;
+    background-repeat: no-repeat;
+    margin: 10px;
+}
+.social-icon:nth-last-of-type(2){
+    background-image: url(../img/Instagram.png);
+}
+.social-icon:nth-last-of-type(3){
+    background-image: url(../img/whatsapp.png);
+}
+.footer-menu-container{
+    list-style-type: none;
+    color: $color_caja;
+    font-size: 18px;
+}
+.menu-item{
+    margin: 1rem 1.5rem;
+    cursor: pointer;
+    opacity: 0.6;
+}
+.copyright{
+    color: $color_caja;
+    opacity: 0.3;
+    text-align: center;
 }
 p{ 
     line-height: 1.5em;
@@ -214,7 +265,9 @@ b{
     height: auto;
 }
 form{
+    display: flex;
     margin: 0 auto;
+    padding: 10px;
     width: 400px;
     height: 400px;
     border: 1px solid rgb(20, 20, 20);
@@ -225,21 +278,22 @@ label{
     display: inline-block;
     width: 90px;
     text-align: right;
+    padding-right: 10px;
 }
-#form{
+.form{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    padding: 10px;
 }
 /*para telefonos*/
 @media only screen and (max-width:700px){
     #grilla{
         display: grid;
         grid-template-columns: 100%;
-        grid-template-rows: 180px 150px 1000px 120px;
+        grid-template-rows: 290px 1000px 300px;
         grid-template-areas: "header"
-                             "nav"
                              "main"
                              "footer";
         justify-content: center;
@@ -247,6 +301,10 @@ label{
     }
     header{
         height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    align-items:center;
     }
     
     ul{
@@ -288,4 +346,5 @@ label{
         width: 90%;
     
     }
+    
 }
