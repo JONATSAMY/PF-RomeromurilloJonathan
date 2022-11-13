@@ -222,7 +222,7 @@ b {
   width: 100%;
   position: relative;
   top: 50%;
-  right: 20%; }
+  left: 20%; }
 
 .blog-section {
   border: 1px solid #04B6DE;

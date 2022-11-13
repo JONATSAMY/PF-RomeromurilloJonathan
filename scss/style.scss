@@ -220,19 +220,18 @@ b{
     align-items: center;
     font-size: 18px;
 }
-#inicio-1 {
-    height: 200px;
-    width: 100%;
+@mixin estilo-inicio($height, $width, $top, $left) {
+    height: $height;
+    width: $width;
     position: relative;
-    top: 50%;
-    left: 10%;
+    top: $top;
+    left: $left;
+}
+#inicio-1 {
+    @include estilo-inicio(200px, 100%, 50%, 10%);
 }
 #inicio-2 {
-    height: 200px;
-    width: 100%;
-    position: relative;
-    top: 50%;
-    right: 20%;
+    @include estilo-inicio(200px, 100%, 50%, 20%);
 }
 .blog-section{
     border: 1px solid $color_borde_caja;
