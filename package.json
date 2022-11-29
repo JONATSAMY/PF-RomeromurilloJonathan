@@ -1,7 +1,7 @@
 {
-  "name": "PreEntrega2RomeromurilloJonathan",
+  "name": "PreEntrega3RomeroJonathan",
   "version": "1.0.0",
-  "description": "entrega de proyecto coderhouse",
+  "description": "entrega de proyecto Final coderhouse",
   "main": "index.js",
   "devDependencies": {
     "node-sass": "^8.0.0",
