@@ -1,5 +1,5 @@
 {
-  "name": "preentrega2romeromurillojonathan",
+  "name": "PreEntrega2RomeromurilloJonathan",
   "version": "1.0.0",
   "description": "entrega de proyecto coderhouse",
   "main": "index.js",
@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JONATSAMY/PreEntrega2RomeromurilloJonathan.git"
+    "url": "git+https://github.com/JONATSAMY/PreEntrega3RomeromurilloJonathan.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JONATSAMY/PreEntrega2RomeromurilloJonathan/issues"
+    "url": "https://github.com/JONATSAMY/PreEntrega3RomeromurilloJonathan/issues"
   },
-  "homepage": "https://github.com/JONATSAMY/PreEntrega2RomeromurilloJonathan#readme"
+  "homepage": "https://github.com/JONATSAMY/PreEntrega3RomeromurilloJonathan#readme"
 }
